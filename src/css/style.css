@@ -1,0 +1,173 @@
+/* Primero  separamos por secciones y damos los estilos */ 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.principal{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/fondo-2.jpg');
+    background-size: cover;
+
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.textos{
+    width: 100%;
+    height: 200px;
+    /* background: #f0bfbf; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+}
+
+.fuente{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.0rem;
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas .card{
+    margin: 20px 0;
+}
+
+.card i{
+    margin-top: 5px;
+    margin-left: 7px;
+    color: #29731D;
+}
+
+.iconos i{
+    color: #8E8E8E;
+}
+
+.empresa{
+    background: #F7F7F7;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    color: #8E8E8E;
+    background: #1A1A1A;
+    justify-content: space-around;
+    flex-direction: column;   
+}
+
+footer .container{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.contactos{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.siguenos{
+    padding: 10px;
+}
+
+.siguenos .iconos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.siguenos .iconos a{
+    font-size: 40px;
+    color: #8E8E8E;
+}
+
+hr{
+    border-color: #E6E6E6;
+}
+
+b{
+    color: #459822;
+}
+
+.barra{
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: #E6E6E6;
+    margin: auto;
+}
+
+#linea{
+    width: 1px;
+    height: 100px;
+    background-color: silver;
+    text-align: center;
+    margin-left: 50px;
+}
+/* ahora aplicaremos estilos para ordenador
+Repasa las Clases de Bootstrap
+media solo pantalla y
+*/
+
+.fondo{
+    width: 100%;
+}
+
+.btn{
+    border-radius: 50px;
+}
+
+/* 
+    el logo le pertenece al nav
+
+
+*/
+
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 10;
+
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@media only screen and (min-width: 960px){
+
+    .tarjetas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+}
+
+/* truco para centar absolute
+https: //www.esthersola.com/css-centrar-postion-absolute/
+*/
