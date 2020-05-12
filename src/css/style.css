@@ -1,3 +1,4 @@
+  
 /* Primero  separamos por secciones y damos los estilos */ 
 *{
     margin: 0px;
@@ -141,21 +142,10 @@ media solo pantalla y
 
 /* 
     el logo le pertenece al nav
-
-
 */
 
-.logo{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    z-index: 10;
-
-    top: 100px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+img#logo{
+    
 }
 
 @media only screen and (min-width: 960px){
@@ -166,8 +156,41 @@ media solo pantalla y
         justify-content: space-between;
     }
 
-}
+    nav{
+        height: 80px;
+    }
 
-/* truco para centar absolute
-https: //www.esthersola.com/css-centrar-postion-absolute/
-*/
+    .caja{
+        display: table;
+        margin: auto;
+        margin-top: 15px;
+        /* background-color: green; */
+        height: 40px;
+    }
+
+    ul{
+        display: block;
+        float: left;
+        color: white;
+
+    }
+
+    img#logo{
+        width: 200px;
+        height: 200px;
+        float: left;
+        display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 300px;
+        margin-left: 120px;
+    }
+
+    ul li{
+        float: left;
+        margin: 10px;
+        padding: 2px;
+       margin-left: 120px;
+    }
+
+}
